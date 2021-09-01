@@ -1,0 +1,40 @@
+.heading{
+    background-color: aliceblue;
+    padding : 20px;
+}
+.list-container{
+    background-color: bisque;
+    padding : 10px;
+
+}
+.list-item-container{
+    list-style-type: none;
+    display: flex;
+}
+.list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-item{
+    margin-right:40px;
+}
+.title{
+    background-color: rgb(34, 38, 46);
+    padding : 30px;
+    border-radius:10px;
+    width : 300px;
+    color:white;
+    
+
+}
+.title-container{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav-link{
+    color:white
+}

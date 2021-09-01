@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { Route,Switch,BrowserRouter } from 'react-router-dom';
+import GitHubIssuesList from "./components/GitHubIssuesList"
+//import GitHubIssuesListItem from './components/GitHubIssuesListItem';
+// import About from './components/About';
+// import Contact from './components/Contact';
+// import NotFound from './components/NotFound';
+import Header from "./components/Header"
 import './App.css';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Switch>
+      <Route exact path = "/" component = {GitHubIssuesList}/>
+      {/* <Route  exact path = "/issues/:id" component = {GitHubIssuesListItem}/>
+      <Route exact path = "/About" component = {About} />
+      <Route exact path = "/Contact" component = {Contact}/>
+      <Route component = {NotFound}/> */}
+      </Switch>
     </div>
+    </BrowserRouter>
   );
 }
 
