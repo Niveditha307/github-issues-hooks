@@ -1,5 +1,7 @@
 import useFetch from "./useFetch"
 import {Link} from "react-router-dom"
+
+
 import "./Header.css"
 
 
@@ -13,7 +15,7 @@ export default function GitHubIssuesList(){
             <div className = "title-container">
            {data.map(eachIssue => (    
                <p className = "title" key = {eachIssue.id}>
-                    <Link className = "nav-link" to = {`/issues/${eachIssue.number}`}>{eachIssue.title}</Link></p>
+                    <Link className = "nav-link" to = {`/issues/${eachIssue.number}`}> {eachIssue.title}</Link></p>
            ))}
            </div>
         </div>

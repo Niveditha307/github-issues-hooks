@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
 import Header from "./components/Header"
+
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Header/>
+     
       <Switch>
       <Route exact path = "/" component = {GitHubIssuesList}/>
       <Route  exact path = "/issues/:id" component = {GitHubIssuesListItem}/>
